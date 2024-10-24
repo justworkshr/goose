@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: goose
+  description: Common libraries for neonmoose services.
+  annotations:
+    github.com/project-slug: justworkshr/goose
+spec:
+  lifecycle: maintenance
+  type: library
+  owner: developers
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: goose
+  description: Common libraries for neonmoose services.
+  annotations:
+    github.com/project-slug: justworkshr/goose
+  tags:
+    - go
+spec:
+  lifecycle: maintenance
+  type: library
+  owner: developers
+  system: goose
